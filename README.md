@@ -1,0 +1,2 @@
+# planning-poker
+SCRUM TIME - PLANNING POKER EXERCISE
