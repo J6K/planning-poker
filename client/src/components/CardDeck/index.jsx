@@ -10,14 +10,14 @@ export default class CardDeck extends Component {
       height: '100px'
     }
     return (
-      <div>
+      <div className="card-deck">
         {fruits.map(fruit => {
           return (
-            <div style={style}>
               <Draggable>
-                <img src={fruit} width='100%' />
+                <div className="cards">
+                  <img src={fruit} width='80%' height="70%" />
+                </div>
               </Draggable>
-            </div>
           )
         })}
       </div>
