@@ -16,8 +16,8 @@ export default class App extends Component {
   render() {
     const { fruits } = this.state;
     return (
-      <div>
-        <div style={{textAlign:'center'}}> Scrum Time! Planning Poker</div>
+      <div className="card-container">
+        <h1 style={{textAlign:'center'}}> Scrum Time! Planning Poker</h1>
         <CardDeck fruits={fruits} />
       </div>
     )
