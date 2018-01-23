@@ -23,7 +23,7 @@ const s3Handler = () => {
       } else {
         console.log('s3.getObject - successfully retrieved data ', Contents);
         _.each(Contents, ({ Key }) => {
-          urls.push(`${process.env.AWS_S3_LINK}${Key}`)
+          urls.push(`${process.env.AWS_S3_LINK}/${Key}`)
         });
         res.status(200).send(urls);
       }
